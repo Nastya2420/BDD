@@ -30,6 +30,7 @@ public class MoneyTransferTest {
         Assertions.assertEquals(moneyTransferPage.getSenderAmount(), dashboardPage.getSecondCardSum());
         Assertions.assertEquals(totalAmount, dashboardPage.getFirstCardSum() + dashboardPage.getSecondCardSum());
     }
+
     @Test
     void transferMoneyTwoFromOne() {
         val moneyTransferPage = dashboardPage.refillTwoFromOne();
